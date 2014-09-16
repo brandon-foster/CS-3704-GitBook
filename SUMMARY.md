@@ -12,4 +12,6 @@
    * [Reading](chapter_03/reading_notes.md)
    * [Lecture (09.09.2014)](chapter_03/class_notes_09092014.md)
    * [Lecture (11.09.2014)](chapter_03/lecture_11092014.md)
+* [Chapter 04](chapter_04/README.md)
+   * [Lecture (16.09.2014)](chapter_04/lecture_16092014)
 
