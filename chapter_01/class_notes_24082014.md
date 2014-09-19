@@ -1,4 +1,4 @@
-#class notes (24.08.2014)
+#Lecture (24.08.2014)
 
 #### CHAOS Report (Standish Group)
 * 250 BIllion for 175K projects

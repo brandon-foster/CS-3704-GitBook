@@ -1,4 +1,4 @@
-# class notes (09.09.2014)
+# Lecture (09.09.2014)
 
 #### **Agile processes in-name-only**
 * Agile is a mindset, not a “buzzword”
@@ -6,10 +6,10 @@
 * Scaling Agile
 
 #### **The Agile Manifesto**
-* **Individuals and Interactions** over processes and tools
-* **Working Software** over comprehensive documentation
-* **Customer Collaboration** over contract negotiation
-* **Responding to Change** over following a plan
+* *Individuals and Interactions* over *Processes and Tools*
+* *Working Software* over *Comprehensive Documentation*
+* *Customer Collaboration* over *Contract Negotiation*
+* *Responding to Change* over *Following a Plan*
     * modify plans in order to accomidate change
 * While there is value in the items on the right, we value the items on the left more.
 
