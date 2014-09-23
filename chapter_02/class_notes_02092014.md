@@ -1,4 +1,4 @@
-# Lecture (02.09.2014)
+# Lecture (2014.09.02)
 #### What is the Software Process?
 * Verification: Is it right? Does it match the specifications?
 * Validation: Does it match the customers needs and intents?

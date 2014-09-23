@@ -1,4 +1,4 @@
-# Lecture (09.09.2014)
+# Lecture (2014.09.09)
 
 #### **Agile processes in-name-only**
 * Agile is a mindset, not a “buzzword”
