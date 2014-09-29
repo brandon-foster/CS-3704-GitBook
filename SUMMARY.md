@@ -15,6 +15,7 @@
 * [Chapter 04](chapter_04/README.md)
    * [Lecture (2014.09.16)](chapter_04/lecture_16092014.md)
    * [Lecture (2014.09.23)](chapter_04/lecture_18092014.md)
-* [Chapter 06](chapter_06/README)
+* [Chapter 06](chapter_06/README.md)
+   * [Architectural Design](chapter_06/architectural_design.md)
    * [Lecture (2014.09.25)](chapter_06/lecture_20140925.md)
 
