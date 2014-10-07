@@ -21,4 +21,5 @@
    * [Lecture (2014.10.02)](chapter_06/lecture_20141002.md)
 * [Chapter 08: Software Testing](chapter_08_software_testing/README.md)
    * [Reading Notes](chapter_08_software_testing/reading_notes.md)
+   * [Lecture (2014.10.07)](chapter_08_software_testing/lecture_20141007.md)
 
