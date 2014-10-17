@@ -19,6 +19,7 @@
    * [Architectural Design](chapter_06/architectural_design.md)
    * [Lecture (2014.09.25)](chapter_06/lecture_20140925.md)
    * [Lecture (2014.10.02)](chapter_06/lecture_20141002.md)
+* [Chapter 07: Software Design](chapter_07_software_design/README.md)
 * [Chapter 08: Software Testing](chapter_08_software_testing/README.md)
    * [Reading Notes](chapter_08_software_testing/reading_notes.md)
    * [Lecture (2014.10.07)](chapter_08_software_testing/lecture_20141007.md)
@@ -26,4 +27,5 @@
    * [Lecture (2014.10.09)](chapter_16_software_reuse/lecture_20141009.md)
 * [Chapter 17: Component-Based Software Engineering](chapter_17_component-based_software_engineering/README.md)
    * [Lecture (2014.10.09)](chapter_17_component-based_software_engineering/lecture_20141009)
+* [Pop Quizes](pop_quizes/README.md)
 
