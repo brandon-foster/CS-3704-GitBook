@@ -55,14 +55,14 @@ Discipline and agility
 
 #### Umbrella Activities
 * activities spanning the entire development lifecycle
-* Software Project Management
-* Formal Technical Reviews
-* Software Quality Assurance
-* Software Configuration Management
-* Re-usability Management
-* Risk Management
-* Measurement and Metrics
-* Document Preparation and Production
+    * Software Project Management
+    * Formal Technical Reviews
+    * Software Quality Assurance
+    * Software Configuration Management
+    * Re-usability Management
+    * Risk Management
+    * Measurement and Metrics
+    * Document Preparation and Production
 
 >“Change is the only constant”
 >       \- Heraclitus

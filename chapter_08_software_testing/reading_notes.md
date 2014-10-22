@@ -4,7 +4,6 @@
 
 #### Unit Testing
 individual program units or object classes are tested. Testing the functionality of objects or methods.
-
 * test all object methods
 * set and check the value of all attributes associated with the         object
 *  put the object into all possible states. This means that you          should simulate all events that cause a state change.
@@ -13,18 +12,17 @@ individual program units or object classes are tested. Testing the functionality
     1. setup: initialize the system (inputs and expected outputs)
     2. call (call the object or method to be tested)
     3. assertion (compare the call with the expected result)
-
 * Choosing Unit Tests
     * Partition Testing:
         * using groups of inputs that have common characteristics and         should be processed in a similar fashion
     * Guideline-Based Testing:
         * guidelines reflect previous experience of the kinds of              errors that program- mers often make when developing                  components
-    * Choose test cases on the boundaries of partitions
-    * Choose inputs that force the system to generate all error             messages;
-    * Design inputs that cause input buffers to overflow;
-    * Repeat the same input or series of inputs numerous times;
-    * Force invalid outputs to be generated;
-    * Force computation results to be too large or too small.
+* Choose test cases on the boundaries of partitions
+* Choose inputs that force the system to generate all error             messages;
+* Design inputs that cause input buffers to overflow;
+* Repeat the same input or series of inputs numerous times;
+* Force invalid outputs to be generated;
+* Force computation results to be too large or too small.
 
 #### Component Testing
 where several individual units are integrated to create composite components. Component testing should focus on testing component interfaces.
@@ -45,7 +43,7 @@ where several individual units are integrated to create composite components. Co
 
 * **Interface Testing Guidelines**
 
-1. Examine the code to be tested and explicitly list each call to an external compo- nent. Design a set of tests in which the values of the parameters to the external components are at the extreme ends of their ranges. These extreme values are most likely to reveal interface inconsistencies.
+1. Examine the code to be tested and explicitly list each call to an external component. Design a set of tests in which the values of the parameters to the external components are at the extreme ends of their ranges. These extreme values are most likely to reveal interface inconsistencies.
 
 2. Where pointers are passed across an interface, always test the interface with null pointer parameters.
 
