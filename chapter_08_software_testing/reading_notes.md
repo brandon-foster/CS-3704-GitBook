@@ -132,15 +132,10 @@ a stage in the testing process in which users or customers provide input and adv
 
 
 1. Define acceptance criteria
-
 2. Plan acceptance testing
-
 3. Derive acceptance tests
-
 4. Run acceptance tests
-
 5. Negotiate test results
-
 6. Reject/accept system
 
 
