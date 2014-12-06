@@ -23,5 +23,6 @@
 * [Chapter 17: Component-Based Software Engineering](chapter_17_component-based_software_engineering/README.md)
    * [Lecture (2014.10.09)](chapter_17_component-based_software_engineering/lecture_20141009.md)
 * [Midterm Study](midterm_study/README.md)
+* [Final Review](final_review.md)
 * [Pop Quizes](pop_quizes/README.md)
 
