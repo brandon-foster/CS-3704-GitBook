@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture (2014.08.24) | CS-3704 : Intermediate Software Design</title>
+        <title>Reading Notes | CS-3704 : Intermediate Software Design</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../chapter_02/README.html" />
+    <link rel="next" href="../chapter_08_software_testing/lecture_20141007.html" />
     
     
-    <link rel="prev" href="../chapter_01/README.html" />
+    <link rel="prev" href="../chapter_08_software_testing/README.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.1" data-basepath=".." data-revision="1418087643042">
+    <div class="book"  data-level="7.1" data-basepath=".." data-revision="1418087643042">
     
 
 <div class="book-summary">
@@ -82,7 +82,7 @@
                 
     
         
-        <li class="chapter active" data-level="1.1" data-path="chapter_01/class_notes_24082014.html">
+        <li class="chapter " data-level="1.1" data-path="chapter_01/class_notes_24082014.html">
             
                 
                     <a href="../chapter_01/class_notes_24082014.html">
@@ -336,7 +336,7 @@
                 
     
         
-        <li class="chapter " data-level="7.1" data-path="chapter_08_software_testing/reading_notes.html">
+        <li class="chapter active" data-level="7.1" data-path="chapter_08_software_testing/reading_notes.html">
             
                 
                     <a href="../chapter_08_software_testing/reading_notes.html">
@@ -585,93 +585,177 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_3380">
+                    <section class="normal" id="section-gitbook_3394">
                     
-                        <h1 id="lecture-20140824">Lecture (2014.08.24)</h1>
-<h4 id="chaos-report-standish-group">CHAOS Report (Standish Group)</h4>
+                        <h1 id="reading-notes-chapter-08---software-testing">Reading Notes: Chapter 08 - Software Testing</h1>
+<h2 id="81-development-testing">8.1 Development testing</h2>
+<h4 id="unit-testing">Unit Testing</h4>
+<p>individual program units or object classes are tested. Testing the functionality of objects or methods.</p>
 <ul>
-<li>250 BIllion for 175K projects</li>
-<li>31% Cancelled</li>
-<li>51% are +189% over original budget</li>
-<li>16% on-time and within budget</li>
-</ul>
-<p><strong>IEEE Definition of Software Engineering :</strong> the study and application of engineering to the design, development, and maintenance of software.</p>
-<h4 id="goals-of-software-engineering">Goals of Software Engineering</h4>
-<ul>
-<li>quality on-time within budget value to customers and users</li>
-</ul>
-<h4 id="objectives">Objectives</h4>
-<ul>
-<li>compromise</li>
-<li>trade-offs</li>
-<li>modularity --&gt; low coupling</li>
-</ul>
-<h4 id="principles">Principles</h4>
-<ul>
-<li>// TODO</li>
-</ul>
-<h4 id="attributes">Attributes</h4>
-<ul>
-<li>// TODO</li>
-</ul>
-<h4 id="other-considerations">Other Considerations</h4>
-<ul>
-<li><strong>Users vs. Customers</strong> Accommidate the plan ad-hoc (formed, arranged, or done for a particular purpose only.)
-Discipline and agility</li>
-</ul>
-<h4 id="4-ps-of-software-engineering">4 P’s of Software Engineering</h4>
-<ul>
-<li>People (Who)</li>
-<li>Process (How)</li>
-<li>Project (Everything involved)</li>
-<li>Product (What)</li>
-</ul>
-<h4 id="process">Process</h4>
-<ul>
-<li><strong>communication</strong> - who does what etc...</li>
-<li><strong>planning</strong> - milestones, builds etc...</li>
-<li><strong>modeling</strong></li>
-<li><strong>construction</strong></li>
-<li><strong>deployment</strong></li>
-</ul>
-<h4 id="architecture-vs-design">Architecture vs. Design</h4>
-<ul>
-<li>Architecture<ul>
-<li>blueprint</li>
-<li>high-level</li>
+<li>test all object methods</li>
+<li>set and check the value of all attributes associated with the         object</li>
+<li><p>put the object into all possible states. This means that you          should simulate all events that cause a state change.</p>
+</li>
+<li><p>Automated Testing</p>
+<ol>
+<li>setup: initialize the system (inputs and expected outputs)</li>
+<li>call (call the object or method to be tested)</li>
+<li>assertion (compare the call with the expected result)</li>
+</ol>
+</li>
+<li>Choosing Unit Tests<ul>
+<li>Partition Testing:<ul>
+<li>using groups of inputs that have common characteristics and         should be processed in a similar fashion</li>
 </ul>
 </li>
-<li>Design<ul>
-<li>how to do something</li>
-<li>what to use</li>
-<li>specifics</li>
+<li>Guideline-Based Testing:<ul>
+<li>guidelines reflect previous experience of the kinds of              errors that program- mers often make when developing                  components</li>
 </ul>
 </li>
 </ul>
-<h4 id="8020-rule">80/20 Rule</h4>
-<ul>
-<li>80% of the features will be used 20% of the time</li>
-<li>20% of the features will be used 80% of the time</li>
+</li>
+<li>Choose test cases on the boundaries of partitions</li>
+<li>Choose inputs that force the system to generate all error             messages;</li>
+<li>Design inputs that cause input buffers to overflow;</li>
+<li>Repeat the same input or series of inputs numerous times;</li>
+<li>Force invalid outputs to be generated;</li>
+<li>Force computation results to be too large or too small.</li>
 </ul>
-<h4 id="umbrella-activities">Umbrella Activities</h4>
+<h4 id="component-testing">Component Testing</h4>
+<p>where several individual units are integrated to create composite components. Component testing should focus on testing component interfaces.</p>
+<ol>
+<li><p><strong>Parameter interfaces</strong> These are interfaces in which data or sometimes function references are passed from one component to another. Methods in an object have a parameter interface.</p>
+</li>
+<li><p><strong>Shared memory interfaces</strong> These are interfaces in which a block of memory is shared between components. Data is placed in the memory by one subsystem and retrieved from there by other sub-systems. This type of interface is often used in embedded systems, where sensors create data that is retrieved and processed by other system components.</p>
+</li>
+<li><p><strong>Procedural interfaces</strong> These are interfaces in which one component encapsu- lates a set of procedures that can be called by other components. Objects and reusable components have this form of interface.</p>
+</li>
+<li><p><strong>Message passing interfaces</strong> These are interfaces in which one component requests a service from another component by passing a message to it. A return message includes the results of executing the service. Some object-oriented sys- tems have this form of interface, as do client–server systems.</p>
+</li>
+</ol>
 <ul>
-<li>activities spanning the entire development lifecycle<ul>
-<li>Software Project Management</li>
-<li>Formal Technical Reviews</li>
-<li>Software Quality Assurance</li>
-<li>Software Configuration Management</li>
-<li>Re-usability Management</li>
-<li>Risk Management</li>
-<li>Measurement and Metrics</li>
-<li>Document Preparation and Production</li>
+<li><p><strong>Interface Errors</strong></p>
+<ul>
+<li>interface misuse</li>
+<li>interface misunderstandin</li>
+<li>timing errors</li>
+</ul>
+</li>
+<li><p><strong>Interface Testing Guidelines</strong></p>
+</li>
+<li><p>Examine the code to be tested and explicitly list each call to an external component. Design a set of tests in which the values of the parameters to the external components are at the extreme ends of their ranges. These extreme values are most likely to reveal interface inconsistencies.</p>
+</li>
+<li><p>Where pointers are passed across an interface, always test the interface with null pointer parameters.</p>
+</li>
+<li><p>Where a component is called through a procedural interface, design tests that deliberately cause the component to fail. Differing failure assumptions are one of the most common specification misunderstandings.</p>
+</li>
+<li><p>Use stress testing in message passing systems. This means that you should design tests that generate many more messages than are likely to occur in prac- tice. This is an effective way of revealing timing problems.</p>
+</li>
+<li><p>Where several components interact through shared memory, design tests that vary the order in which these components are activated. These tests may reveal implicit assumptions made by the programmer about the order in which the shared data is produced and consumed.</p>
+</li>
+</ul>
+<h4 id="system-testing">System Testing</h4>
+<ul>
+<li><p>where some or all of the components in a system are integrated and the system is tested as a whole. System testing should focus on testing com- ponent interactions.</p>
+</li>
+<li><p>system testing should focus on testing the interactions between the components and objects that make up a system</p>
+</li>
+<li><p>focus on testing the features of the operational system</p>
+<ol>
+<li><p>All system functions that are accessed through menus should be tested.</p>
+</li>
+<li><p>Combinations of functions (e.g., text formatting) that are accessed through the same menu must be tested.</p>
+</li>
+<li><p>Where user input is provided, all functions must be tested with both correct and incorrect input.</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="82-test-driven-development">8.2 Test-Driven Development</h2>
+<ul>
+<li><p>interleave testing and code development. You develop the code incrementally, along with a test for that increment. You don’t move on to the next increment until the code that you have developed passes its test.</p>
+<ol>
+<li><p>identify an increment of functionality</p>
+</li>
+<li><p>write a test for this functionality</p>
+</li>
+<li><p>run the test along with all other tests</p>
+</li>
+<li><p>implement the functionality and re-run the tests</p>
+</li>
+<li><p>once the test passes, implement the next chunk of functionality</p>
+</li>
+</ol>
+</li>
+<li><p>Benefits of TTD</p>
+<ol>
+<li><strong>Code Coverage</strong> : All code has been executed</li>
+<li><strong>Regression Testing</strong> : check that changes have not introduced new bugs</li>
+<li><strong>Simplified Debugging</strong> : when a test fails, it should be obvious where the problem is</li>
+<li><strong>System Documentation</strong> : the tests themselve serve as documentation</li>
+</ol>
+</li>
+</ul>
+<h2 id="83-release-testing">8.3 Release Testing</h2>
+<p>the process of testing a particular release of a system that is intended for use outside of the development team.</p>
+<p><strong>Two Important Distinctions</strong></p>
+<ol>
+<li><p>A separate team that has not been involved in the system development should be responsible for release testing.</p>
+</li>
+<li><p>System testing by the development team should focus on discovering bugs in the system (defect testing). The objective of release testing is to check that the system meets its requirements and is good enough for external use (validation testing).</p>
+</li>
+</ol>
+<ul>
+<li><p><strong>Requirements Based Testing</strong></p>
+<ul>
+<li>requirements should be testable</li>
+</ul>
+</li>
+<li><p><strong>Scenario Testing</strong></p>
+<ul>
+<li>Scenario testing is an approach to release testing where you devise typical scenarios of use and use these to develop test cases for the system. A scenario is a story that describes one way in which the system might be used. Scenarios should be realistic and real system users should be able to relate to them.</li>
+</ul>
+</li>
+<li><p><strong>Performance Testing</strong></p>
+<ul>
+<li>slowly increasing the load on the system, starting with below minimum requirements and increasing the stress on the system up to and beyond average usage</li>
+<li>if the system reaches a point where the load proves too much and the system fails, test that the system has a soft-fail where there is not data corruption and/or loss and the system fails gracefully.</li>
+<li>This type of stress testing can bring defects to light that may have otherwise remained hidden.</li>
 </ul>
 </li>
 </ul>
-<blockquote>
-<p>“Change is the only constant”
-      - Heraclitus</p>
-</blockquote>
-<h4 id="balancing-between-planning-and-execution">Balancing Between Planning and Execution</h4>
+<h2 id="84-user-testing">8.4 User Testing</h2>
+<p>a stage in the testing process in which users or customers provide input and advice on system testing</p>
+<ul>
+<li><p><strong>Alpha Testing</strong></p>
+<ul>
+<li>where users work along side the development team to test the system at the developers worksite</li>
+</ul>
+</li>
+<li><p><strong>Beta Testing</strong></p>
+<ul>
+<li><p>when a realease of the software is made available to users to test and raies concerns and defects to the dev teams</p>
+</li>
+<li><p>mostly used for software products that are used in many different environments</p>
+</li>
+<li><p>also a form of marketing— customers learn about their system and what it can do for them.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Acceptance Testing</strong></p>
+<ul>
+<li>where customers test the system and decide whether it is complete and ready to be released to the customer environment</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Define acceptance criteria</li>
+<li>Plan acceptance testing</li>
+<li>Derive acceptance tests</li>
+<li>Run acceptance tests</li>
+<li>Negotiate test results</li>
+<li>Reject/accept system</li>
+</ol>
 
                     
                     </section>
@@ -682,10 +766,10 @@ Discipline and agility</li>
         </div>
 
         
-        <a href="../chapter_01/README.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 01: Introduction"><i class="fa fa-angle-left"></i></a>
+        <a href="../chapter_08_software_testing/README.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 08: Software Testing"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../chapter_02/README.html" class="navigation navigation-next " aria-label="Next page: Chapter 02: Software Processes"><i class="fa fa-angle-right"></i></a>
+        <a href="../chapter_08_software_testing/lecture_20141007.html" class="navigation navigation-next " aria-label="Next page: Lecture (2014.10.07)"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

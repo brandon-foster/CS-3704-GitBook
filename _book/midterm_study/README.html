@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lecture (2014.08.24) | CS-3704 : Intermediate Software Design</title>
+        <title>Midterm Study | CS-3704 : Intermediate Software Design</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../chapter_02/README.html" />
+    <link rel="next" href="../final_review.html" />
     
     
-    <link rel="prev" href="../chapter_01/README.html" />
+    <link rel="prev" href="../chapter_17_component-based_software_engineering/lecture_20141009.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1.1" data-basepath=".." data-revision="1418087643042">
+    <div class="book"  data-level="10" data-basepath=".." data-revision="1418087643042">
     
 
 <div class="book-summary">
@@ -82,7 +82,7 @@
                 
     
         
-        <li class="chapter active" data-level="1.1" data-path="chapter_01/class_notes_24082014.html">
+        <li class="chapter " data-level="1.1" data-path="chapter_01/class_notes_24082014.html">
             
                 
                     <a href="../chapter_01/class_notes_24082014.html">
@@ -449,7 +449,7 @@
         </li>
     
         
-        <li class="chapter " data-level="10" data-path="midterm_study/README.html">
+        <li class="chapter active" data-level="10" data-path="midterm_study/README.html">
             
                 
                     <a href="../midterm_study/README.html">
@@ -585,55 +585,30 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_3380">
+                    <section class="normal" id="section-gitbook_3400">
                     
-                        <h1 id="lecture-20140824">Lecture (2014.08.24)</h1>
-<h4 id="chaos-report-standish-group">CHAOS Report (Standish Group)</h4>
+                        <h1 id="midterm-study">Midterm Study</h1>
 <ul>
-<li>250 BIllion for 175K projects</li>
-<li>31% Cancelled</li>
-<li>51% are +189% over original budget</li>
-<li>16% on-time and within budget</li>
+<li>NO component based SE and software reuse chapters</li>
+<li>testing techniques<ul>
+<li>unit testing</li>
+<li>component and system testing</li>
+<li>alpha and beta testing</li>
 </ul>
-<p><strong>IEEE Definition of Software Engineering :</strong> the study and application of engineering to the design, development, and maintenance of software.</p>
-<h4 id="goals-of-software-engineering">Goals of Software Engineering</h4>
-<ul>
-<li>quality on-time within budget value to customers and users</li>
+</li>
+<li>architectural styles</li>
 </ul>
-<h4 id="objectives">Objectives</h4>
+<h4 id="ch-1--introduction">Ch 1 : Introduction</h4>
 <ul>
-<li>compromise</li>
-<li>trade-offs</li>
-<li>modularity --&gt; low coupling</li>
-</ul>
-<h4 id="principles">Principles</h4>
-<ul>
-<li>// TODO</li>
-</ul>
-<h4 id="attributes">Attributes</h4>
-<ul>
-<li>// TODO</li>
-</ul>
-<h4 id="other-considerations">Other Considerations</h4>
-<ul>
-<li><strong>Users vs. Customers</strong> Accommidate the plan ad-hoc (formed, arranged, or done for a particular purpose only.)
-Discipline and agility</li>
-</ul>
-<h4 id="4-ps-of-software-engineering">4 P’s of Software Engineering</h4>
-<ul>
+<li>4 P&#39;s of Software Engineering :<ul>
 <li>People (Who)</li>
 <li>Process (How)</li>
 <li>Project (Everything involved)</li>
 <li>Product (What)</li>
 </ul>
-<h4 id="process">Process</h4>
-<ul>
-<li><strong>communication</strong> - who does what etc...</li>
-<li><strong>planning</strong> - milestones, builds etc...</li>
-<li><strong>modeling</strong></li>
-<li><strong>construction</strong></li>
-<li><strong>deployment</strong></li>
+</li>
 </ul>
+<p><strong>IEEE Definition of Software Engineering :</strong> the study and application of engineering to the design, development, and maintenance of software.</p>
 <h4 id="architecture-vs-design">Architecture vs. Design</h4>
 <ul>
 <li>Architecture<ul>
@@ -648,30 +623,92 @@ Discipline and agility</li>
 </ul>
 </li>
 </ul>
-<h4 id="8020-rule">80/20 Rule</h4>
+<h4 id="ch-2--software-processes">Ch 2 : Software Processes</h4>
 <ul>
-<li>80% of the features will be used 20% of the time</li>
-<li>20% of the features will be used 80% of the time</li>
+<li>Steps<ul>
+<li>Specification</li>
+<li>Design and Implementation</li>
+<li>Validation</li>
+<li>Evolution</li>
 </ul>
-<h4 id="umbrella-activities">Umbrella Activities</h4>
+</li>
+<li><p>Plan Driven &amp; Agile Processes</p>
+</li>
+<li><p>Software Process</p>
 <ul>
-<li>activities spanning the entire development lifecycle<ul>
-<li>Software Project Management</li>
-<li>Formal Technical Reviews</li>
-<li>Software Quality Assurance</li>
-<li>Software Configuration Management</li>
-<li>Re-usability Management</li>
-<li>Risk Management</li>
-<li>Measurement and Metrics</li>
-<li>Document Preparation and Production</li>
+<li>Process Framework<ul>
+<li>Umbrella Activities<ul>
+<li>Activities [1 - n]</li>
 </ul>
 </li>
 </ul>
-<blockquote>
-<p>“Change is the only constant”
-      - Heraclitus</p>
-</blockquote>
-<h4 id="balancing-between-planning-and-execution">Balancing Between Planning and Execution</h4>
+</li>
+</ul>
+</li>
+<li><p>Software Process Models</p>
+<ul>
+<li>Waterflow<ul>
+<li>Inflexible</li>
+<li>Use for very large projects</li>
+</ul>
+</li>
+<li>Incremental Development<ul>
+<li>Rapid &amp; Flexible</li>
+<li>System tends to degrade as more is added</li>
+</ul>
+</li>
+<li>Prototyping Model<ul>
+<li>improved usability &amp; dev. effort</li>
+<li>compromises and unfinished work presented</li>
+</ul>
+</li>
+<li>ReUse Oriented SE</li>
+<li>Spiral Model<ul>
+<li>Risk assesesed throughout w/ no fixed phases</li>
+<li>requires risk mgmt expretise</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="ch-3--agile-software-development">Ch 3 : Agile software development</h4>
+<h4 id="the-agile-manifesto"><strong>The Agile Manifesto</strong></h4>
+<ul>
+<li><em>Individuals and Interactions</em> over <em>Processes and Tools</em></li>
+<li><em>Working Software</em> over <em>Comprehensive Documentation</em></li>
+<li><em>Customer Collaboration</em> over <em>Contract Negotiation</em></li>
+<li><em>Responding to Change</em> over <em>Following a Plan</em><ul>
+<li>modify plans in order to accomidate change</li>
+</ul>
+</li>
+<li>While there is value in the items on the right, we value the items on the left more.</li>
+</ul>
+<h4 id="ch-4-">Ch 4 :</h4>
+<h4 id="ch-6-">Ch 6 :</h4>
+<h4 id="ch-7--software-design--architecture">Ch 7 : Software Design != Architecture</h4>
+<h4 id="ch-8">Ch 8</h4>
+<h4 id="pressman-chapters-">Pressman Chapters :</h4>
+<h4 id="architechture-frameworks">Architechture Frameworks</h4>
+<ul>
+<li>ADM : Architecture Development Method</li>
+<li>Enterprise Architecture<ul>
+<li>Business Architecture</li>
+<li>Application Architecture</li>
+<li>Data Architecture</li>
+<li>Technology Architecture</li>
+</ul>
+</li>
+<li>Architecture Framework<ul>
+<li>A set of tools which can be used for developing a
+broad range of different architectures.</li>
+</ul>
+</li>
+<li>TOGAF<ul>
+<li>The Open Group Architecture Framework</li>
+<li>an architecture framework that allows you to design, evaluate and build the right architecture for your organization</li>
+</ul>
+</li>
+</ul>
 
                     
                     </section>
@@ -682,10 +719,10 @@ Discipline and agility</li>
         </div>
 
         
-        <a href="../chapter_01/README.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 01: Introduction"><i class="fa fa-angle-left"></i></a>
+        <a href="../chapter_17_component-based_software_engineering/lecture_20141009.html" class="navigation navigation-prev " aria-label="Previous page: Lecture (2014.10.09)"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../chapter_02/README.html" class="navigation navigation-next " aria-label="Next page: Chapter 02: Software Processes"><i class="fa fa-angle-right"></i></a>
+        <a href="../final_review.html" class="navigation navigation-next " aria-label="Next page: Final Review"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
